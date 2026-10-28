@@ -20,7 +20,8 @@ export default async function handler(req, res) {
 
   const supabaseUrl = process.env.SUPABASE_URL;
   const publishableKey = process.env.SUPABASE_PUBLISHABLE_KEY;
-  if (!supabaseUrl || !publishableKey) {
+  const anonKey = process.env.SUPABASE_ANON_KEY;
+  if (!supabaseUrl || !publishableKey || !anonKey) {
     return res.status(503).json({
       error: "Subscriptions aren't connected yet. Please try again later."
     });
@@ -34,7 +35,7 @@ export default async function handler(req, res) {
         headers: {
           "Content-Type": "application/json",
           "apikey": publishableKey,
-          "Authorization": `Bearer ${publishableKey}`,
+          "Authorization": `Bearer ${anonKey}`,
           "Prefer": "resolution=ignore-duplicates,return=representation"
         },
         body: JSON.stringify({ email, source: "website" })
