@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101018">
+  <meta name="description" content="ByteSize Brain makes cyber safety simple with short stories, comic characters, and practical tips. Think sharp. Click smart.">
+  <meta property="og:title" content="ByteSize Brain — Think Sharp. Click Smart.">
+  <meta property="og:description" content="Small clips. Big brain. Meet our first cyber-awareness story: The ₹25 Delivery Scam.">
+  <meta property="og:image" content="/assets/delivery-scam-comic-panel.png">
+  <title>ByteSize Brain — Think Sharp. Click Smart.</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%23ff3d50'/%3E%3Ctext x='50' y='68' font-size='55' text-anchor='middle' font-family='Arial' font-weight='900' fill='white'%3EB%3C/text%3E%3C/svg%3E">
+  <style>
+    :root{--bg:#101018;--panel:#191923;--ink:#f8f7fb;--muted:#b9b7c8;--red:#ff4056;--yellow:#ff4056;--blue:#ff4056;--teal:#f8f7fb;--line:#333342;--max:1160px}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:radial-gradient(ellipse at 80% 0%,#1d1115 0%,var(--bg) 42%);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.55}
+    a{color:inherit} .wrap{width:min(var(--max),calc(100% - 40px));margin:auto}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:22px 0;border-bottom:1px solid #ffffff14}
+    .brand{display:flex;align-items:center;gap:11px;text-decoration:none;font-weight:950;letter-spacing:-.04em;font-size:1.22rem}.brand-mark{width:40px;height:40px;border-radius:13px;background:var(--red);display:grid;place-items:center;color:white;font-size:1.45rem;box-shadow:4px 4px 0 var(--red);transform:rotate(-4deg)}
+    .navlinks{display:flex;align-items:center;gap:clamp(10px,1.8vw,25px)}.navlinks a{text-decoration:none;color:var(--muted);font-size:.93rem;font-weight:700}.navlinks a:hover{color:white}
+    .menu-toggle{display:none;background:transparent;border:1px solid #ffffff55;color:var(--ink);border-radius:8px;padding:9px 12px;font:800 .9rem inherit;cursor:pointer}
+    .navlinks .pill{color:#fff;background:var(--red)}
+    .pill{display:inline-flex;align-items:center;gap:8px;border-radius:999px;padding:10px 16px;background:var(--red);color:#ffffff;text-decoration:none;font-weight:900;font-size:.9rem;box-shadow:0 4px 0 #8d1726;transition:transform .15s}.pill:hover{transform:translateY(-2px)}
+    .hero{padding:66px 0 58px;display:grid;grid-template-columns:1fr 1.02fr;align-items:center;gap:38px}
+    .eyebrow{display:inline-flex;align-items:center;gap:9px;color:var(--teal);font-size:.8rem;letter-spacing:.12em;font-weight:900;text-transform:uppercase}.dot{width:8px;height:8px;border-radius:50%;background:var(--teal);box-shadow:0 0 15px #4de1c1}
+    h1{font-size:clamp(3.25rem,7vw,6.4rem);line-height:.91;letter-spacing:-.075em;margin:20px 0 22px;font-weight:1000} h1 .red{color:var(--red)} h1 .yellow{color:var(--yellow)}
+    .hero p{max-width:530px;color:var(--muted);font-size:1.12rem;margin:0 0 27px}.actions{display:flex;gap:13px;flex-wrap:wrap;align-items:center}.outline{display:inline-flex;padding:10px 15px;border:1px solid #ffffff35;border-radius:999px;text-decoration:none;font-weight:800;color:var(--ink)}.outline:hover{border-color:var(--teal)}
+    .hero-art{position:relative;min-width:0}.hero-art:before{content:"";position:absolute;inset:12px -10px -10px 12px;border:3px solid var(--red);border-radius:4px;z-index:0}.hero-art img{display:block;position:relative;z-index:1;width:100%;height:auto;max-height:620px;object-fit:contain;object-position:center;border:2px solid #f8f7fb;border-radius:2px;box-shadow:0 20px 65px #0008}
+    .tape{position:absolute;z-index:2;top:-16px;right:14px;transform:rotate(5deg);background:var(--red);color:#ffffff;padding:8px 13px;font-size:.75rem;font-weight:1000;letter-spacing:.05em;border:2px solid #17151b;box-shadow:3px 3px 0 var(--red)}
+    .ticker{border-block:1px solid var(--line);background:#ffffff05;overflow:hidden}.ticker-inner{display:flex;justify-content:center;gap:30px;flex-wrap:wrap;padding:15px 0;font-weight:950;letter-spacing:.08em;text-transform:uppercase;font-size:.78rem}.ticker span:nth-child(3n+1){color:var(--red)}.ticker span:nth-child(3n+2){color:var(--yellow)}.ticker span:nth-child(3n){color:var(--teal)}
+    section{padding:76px 0}.section-head{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:27px}.kicker{color:var(--red);font-weight:950;letter-spacing:.12em;text-transform:uppercase;font-size:.78rem}h2{font-size:clamp(2rem,4vw,3.3rem);letter-spacing:-.055em;line-height:1.05;margin:8px 0 0}.section-head p{max-width:400px;color:var(--muted);margin:0}
+    .feature{display:grid;grid-template-columns:1.1fr .9fr;background:var(--panel);border:1px solid #ffffff16;border-radius:24px;overflow:hidden}.feature-copy{padding:clamp(25px,5vw,54px)}.issue-label{display:inline-block;background:var(--red);color:white;border-radius:6px;padding:5px 9px;font-size:.74rem;font-weight:950;letter-spacing:.08em;text-transform:uppercase}.feature h3{font-size:clamp(2rem,4vw,3.4rem);line-height:1;letter-spacing:-.06em;margin:19px 0}.feature-copy p{color:var(--muted);max-width:540px}.feature-art{min-height:330px;background:linear-gradient(135deg,#25243a,#152b39);display:flex;align-items:center;justify-content:center;padding:22px;position:relative;overflow:hidden}.feature-art:before{content:"₹25";position:absolute;font-size:9rem;font-weight:1000;color:#ffffff08;transform:rotate(-15deg)}.warning-card{position:relative;max-width:350px;width:100%;background:#fff;color:#17151b;padding:22px;border-radius:18px;box-shadow:8px 8px 0 var(--yellow);transform:rotate(2deg)}.warning-card .sms{font-size:.74rem;color:#6d6a78;font-weight:800}.warning-card strong{display:block;font-size:1.35rem;line-height:1.15;margin:9px 0}.warning-card .fake-link{color:#c6203b;font-weight:900;overflow-wrap:anywhere}.warning-card .stamp{display:inline-block;margin-top:15px;border:2px solid #e52e46;color:#e52e46;padding:4px 8px;font-weight:1000;transform:rotate(-5deg)}
+    .tips{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:22px}.tip{padding:22px;border:1px solid #ffffff17;background:#ffffff05;border-radius:18px}.tip-num{font-weight:1000;color:var(--teal);font-size:.78rem;letter-spacing:.1em}.tip h4{font-size:1.1rem;margin:10px 0 7px}.tip p{margin:0;color:var(--muted);font-size:.94rem}
+    .team{background:linear-gradient(120deg,#1a1927,#141e29);border-block:1px solid #ffffff12}.team-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:28px}.character{display:flex;gap:20px;align-items:center;padding:24px;background:#ffffff08;border:1px solid #ffffff16;border-radius:20px}.avatar{flex:0 0 92px;width:92px;height:92px;display:grid;place-items:center;border-radius:25px;font-size:3rem}.avatar.bit{background:var(--red);color:#ffffff;transform:rotate(-4deg)}.avatar.bytes{background:var(--teal);color:#102020;transform:rotate(4deg)}.character h3{margin:0;font-size:1.45rem}.role{font-size:.78rem;font-weight:950;letter-spacing:.09em;text-transform:uppercase;color:var(--yellow)}.character p{color:var(--muted);font-size:.94rem;margin:7px 0 0}
+    .team-art{margin:28px 0 0;position:relative;max-width:760px;border:2px solid #f8f7fb;border-radius:14px;overflow:hidden;box-shadow:9px 9px 0 var(--red);background:#101018}
+    .team-art img{display:block;width:100%;height:auto;max-height:420px;object-fit:cover;object-position:center 43%}
+    .team-art figcaption{position:absolute;left:14px;bottom:14px;background:#101018eF;color:#f8f7fb;border:1px solid #f8f7fb66;padding:8px 12px;font:900 .72rem ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.08em}
+
+    .subscribe{padding:38px;background:linear-gradient(110deg,#ff4056,#ec3450 55%,#8d45cb);border-radius:24px;display:flex;justify-content:space-between;align-items:center;gap:25px}.subscribe h2{font-size:clamp(1.8rem,4vw,3rem);margin:0}.subscribe p{color:#fff0f1;margin:10px 0 0;max-width:570px}.subscribe .pill{flex-shrink:0;background:var(--yellow)}
+    .subscribe{background:linear-gradient(120deg,#241116,#151015);border:1px solid #ff405655;box-shadow:8px 8px 0 var(--red);align-items:flex-start}
+    .subscribe-copy{flex:1;min-width:0}.subscribe-copy .kicker{margin-bottom:12px}.subscribe-form{width:min(100%,470px);flex:1;min-width:0}
+    .subscribe-form label{display:block;font-size:.85rem;font-weight:850;margin-bottom:8px}
+    .subscribe-fields{display:flex;gap:9px}
+    .subscribe-fields input{min-width:0;flex:1;background:#0e0e13;color:#fff;border:1px solid #ffffff42;border-radius:10px;padding:14px 13px;font:inherit;outline:none}
+    .subscribe-fields input:focus{border-color:var(--red);box-shadow:0 0 0 3px #ff405626}
+    .subscribe .subscribe-submit{border:0;border-radius:10px;background:var(--red);color:white;box-shadow:0 4px 0 #8d1726;cursor:pointer;font:900 .9rem inherit;white-space:nowrap}
+    .subscribe .subscribe-submit:disabled{opacity:.65;cursor:wait}
+    .privacy-note{font-size:.8rem!important;color:#b9b7c8!important}
+    .form-status{min-height:1.4em;font-size:.88rem;margin:10px 0 0!important;color:#ffd84d!important}
+    .success-message{margin-top:12px;padding:15px;background:#10221e;border:1px solid #4de1c1;border-radius:12px;display:grid;gap:6px;color:#f8f7fb}
+    .success-message[hidden]{display:none}.success-message strong{color:#4de1c1;font-size:1.05rem}.success-message em{font-size:.9rem;color:#e4fff7}.success-message small{color:#b9b7c8}
+    .honeypot{position:absolute;left:-10000px;width:1px;height:1px;overflow:hidden}
+
+    footer{padding:30px 0 40px;color:var(--muted);font-size:.88rem}.footer-row{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;border-top:1px solid var(--line);padding-top:24px}.footer-row strong{color:var(--ink)}
+    .small-note{font-size:.8rem;color:#8e8b9d;margin-top:18px}
+    @media(max-width:900px){.hero{grid-template-columns:1fr;padding-top:46px}.hero-art{max-width:760px;width:100%}.feature{grid-template-columns:1fr}.feature-art{min-height:260px}.tips{grid-template-columns:1fr}.team-grid{grid-template-columns:1fr}.section-head{align-items:start;flex-direction:column}.subscribe{align-items:flex-start;flex-direction:column}.subscribe-form{width:100%}.nav{flex-wrap:wrap}.menu-toggle{display:block}.navlinks{display:none;flex:0 0 100%;flex-direction:column;align-items:stretch;gap:0;padding:8px 0 14px}.navlinks.open{display:flex}.navlinks a{padding:12px 8px;border-top:1px solid #ffffff16}.navlinks .pill{align-self:flex-start;margin-top:10px}}
+    @media(max-width:480px){.wrap{width:min(var(--max),calc(100% - 28px))}.hero{padding-top:34px;gap:28px}.hero p{font-size:1rem}.nav{padding:15px 0}.brand{font-size:1.05rem}.brand-mark{width:35px;height:35px}.character{padding:17px;gap:14px}.avatar{flex-basis:70px;width:70px;height:70px;font-size:2.4rem;border-radius:20px}.subscribe{padding:22px}.subscribe-fields{flex-direction:column}.subscribe .subscribe-submit{width:100%;justify-content:center;padding:13px}.ticker-inner{gap:12px;font-size:.68rem}.hero-art:before{inset:7px -5px -5px 7px}.tape{right:5px;top:-12px;font-size:.65rem}h1{font-size:clamp(3rem,16vw,4.2rem)}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
+  </style>
+</head>
+<body>
+  <header class="wrap nav">
+    <a class="brand" href="#" aria-label="ByteSize Brain home"><span class="brand-mark">B</span><span>ByteSize <span style="color:var(--teal)">Brain</span></span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">Menu ☰</button>
+    <nav class="navlinks" id="main-nav" aria-label="Main navigation">
+      <a href="#">Home</a><a href="/episode-001.html">Episodes</a><a href="#tips">Topics</a><a href="#tips">Resources</a><a href="#team">About</a><a class="pill" href="/episode-001.html">Read issue ↘</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="wrap hero">
+      <div>
+        <div class="eyebrow"><span class="dot"></span> Cyber safety, without the jargon</div>
+        <h1>THINK SHARP.<br><span class="red">CLICK</span> <span class="yellow">SMART.</span></h1>
+        <p>Big cyber threats. Bite-sized explainers. Join Bit and Bytes as we turn everyday online traps into stories you’ll actually remember.</p>
+        <div class="actions"><a class="pill" href="#first-issue">Read our first issue <span aria-hidden="true">→</span></a><a class="outline" href="#team">Meet Bit &amp; Bytes</a></div>
+        <p class="small-note">SMALL CLIPS. BIG BRAIN. · Practical tips for a safer digital life.</p>
+      </div>
+      <div class="hero-art">
+        <span class="tape">ISSUE #001 · SCAM ALERT</span>
+        <img src="/assets/bytesize-brain-comic-hero.png" alt="ByteSize Brain comic artwork featuring Bit and Bytes and the ₹25 delivery scam story">
+      </div>
+    </div>
+
+    <div class="ticker" aria-label="ByteSize Brain principles"><div class="wrap ticker-inner"><span>Pause before you tap</span><span>· Verify the sender</span><span>· Protect your details</span><span>· Think sharp</span></div></div>
+
+    <section id="newsletter" class="wrap">
+      <div class="section-head">
+        <div><div class="kicker">The ByteSize newsletter</div><h2>One small read.<br>One smarter click.</h2></div>
+        <p>We break down the scams, tricks, and digital habits that matter in everyday life—without the technical lecture.</p>
+      </div>
+      <article class="feature" id="first-issue">
+        <div class="feature-copy">
+          <span class="issue-label">First newsletter · Issue 001</span>
+          <h3>The ₹25<br>Delivery Scam</h3>
+          <p>Your parcel is “stuck.” A text says you only need to pay ₹25 to get it delivered. It feels tiny, routine, and urgent. That’s exactly why it can work.</p>
+          <p>Scammers may use a small payment request to lure you onto a fake website and steal your card, UPI, or personal details.</p>
+          <a class="pill" href="/episode-001.html">Learn the 3 safety checks ↓</a>
+        </div>
+        <div class="feature-art" aria-label="Illustration of a suspicious delivery payment message">
+          <div class="warning-card">
+            <div class="sms">MESSAGE · UNKNOWN SENDER</div>
+            <strong>Your parcel is on hold!</strong>
+            <div>Pay ₹25 now to reschedule delivery.</div>
+            <div class="fake-link">delivery-track-pay.example</div>
+            <span class="stamp">SUSPICIOUS!</span>
+          </div>
+        </div>
+      </article>
+      <div id="tips" class="tips">
+        <div class="tip"><div class="tip-num">SAFETY CHECK 01</div><h4>Don’t tap the message link</h4><p>Unexpected delivery texts can be fake—even when they use a familiar courier name or logo.</p></div>
+        <div class="tip"><div class="tip-num">SAFETY CHECK 02</div><h4>Track it the official way</h4><p>Open the courier’s official app or type its website address yourself. Check your order there.</p></div>
+        <div class="tip"><div class="tip-num">SAFETY CHECK 03</div><h4>Never share payment secrets</h4><p>Don’t enter card details, UPI PINs, passwords, or one-time codes on a link from an unexpected text.</p></div>
+      </div>
+      <p class="small-note">Already clicked? Stop entering information. Contact your bank or payment provider immediately if you shared payment details, and report suspected cybercrime through your country’s official channels.</p>
+    </section>
+
+    <section id="team" class="team">
+      <div class="wrap">
+        <div class="kicker">Meet your guides</div><h2>Brains, bytes &amp; better clicks.</h2>
+        <p style="color:var(--muted);max-width:650px">Two curious characters. One mission: make cyber awareness simple, memorable, and a little more fun.</p>
+        <figure class="team-art">
+          <img src="/assets/bit-and-bytes-team.png" alt="Bit, the human detective, standing beside Bytes, the friendly AI robot">
+          <figcaption>BIT + BYTES · YOUR DIGITAL SIDEKICKS</figcaption>
+        </figure>
+        <div class="team-grid">
+          <article class="character">
+            <div class="avatar bit" aria-hidden="true">🕵️</div>
+            <div><div class="role">The human detective</div><h3>Bit</h3><p>Curious, sharp-eyed, and always asking: “Does this message actually make sense?” Bit helps spot red flags before you click.</p></div>
+          </article>
+          <article class="character">
+            <div class="avatar bytes" aria-hidden="true">🤖</div>
+            <div><div class="role">Your AI sidekick</div><h3>Bytes</h3><p>Friendly, fast, and full of bite-sized knowledge. Bytes turns confusing cyber topics into simple steps anyone can use.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap" id="subscribe">
+      <div class="subscribe">
+        <div class="subscribe-copy">
+          <div class="kicker" style="color:#fff">THE BYTE-SIZED BRIEFING</div>
+          <h2>Smarter clicks start here.</h2>
+          <p>Get future ByteSize Brain episodes, scam alerts, and practical cyber tips in your inbox.</p>
+          <p class="privacy-note">No jargon. No spam. Unsubscribe whenever you want.</p>
+        </div>
+        <form class="subscribe-form" id="subscribe-form" novalidate>
+          <label for="subscriber-email">Your email address</label>
+          <div class="subscribe-fields">
+            <input id="subscriber-email" name="email" type="email" placeholder="you@example.com" autocomplete="email" required>
+            <button class="pill subscribe-submit" id="subscribe-submit" type="submit">Subscribe ↗</button>
+          </div>
+          <div class="honeypot" aria-hidden="true"><label for="company-website">Leave this field empty</label><input id="company-website" name="website" tabindex="-1" autocomplete="off"></div>
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+          <div class="success-message" id="success-message" hidden>
+            <strong>You're on the list! 🎉</strong>
+            <span>Thanks for subscribing to ByteSize Brain.</span>
+            <em>“Think before you click. One smart pause can prevent a big problem.”</em>
+            <small>— Bit &amp; Bytes</small>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="wrap">
+    <div class="footer-row"><div><strong>ByteSize Brain</strong><br>Think sharp. Click smart.</div><div>Cyber awareness for real life · © <span id="year"></span> ByteSize Brain</div></div>
+    <p class="small-note">Educational content only. Scams evolve; always verify payment and delivery requests directly with the relevant official service.</p>
+  </footer>
+  <script>
+    const menuToggle = document.querySelector(".menu-toggle");
+    const mainNav = document.getElementById("main-nav");
+    menuToggle.addEventListener("click", () => {
+      const isOpen = mainNav.classList.toggle("open");
+      menuToggle.setAttribute("aria-expanded", String(isOpen));
+      menuToggle.textContent = isOpen ? "Close ✕" : "Menu ☰";
+    });
+    mainNav.querySelectorAll("a").forEach(link => link.addEventListener("click", () => {
+      mainNav.classList.remove("open");
+      menuToggle.setAttribute("aria-expanded", "false");
+      menuToggle.textContent = "Menu ☰";
+    }));
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    const subscribeForm = document.getElementById("subscribe-form");
+    const emailInput = document.getElementById("subscriber-email");
+    const subscribeButton = document.getElementById("subscribe-submit");
+    const formStatus = document.getElementById("form-status");
+    const successMessage = document.getElementById("success-message");
+
+    subscribeForm.addEventListener("submit", async (event) => {
+      event.preventDefault();
+      formStatus.textContent = "";
+      successMessage.hidden = true;
+      const email = emailInput.value.trim();
+      const website = document.getElementById("company-website").value;
+      if (!email || !emailInput.checkValidity()) {
+        formStatus.textContent = "Please enter a valid email address.";
+        emailInput.focus();
+        return;
+      }
+      subscribeButton.disabled = true;
+      subscribeButton.textContent = "Adding you…";
+      try {
+        const response = await fetch("/api/subscribe", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ email, website })
+        });
+        const result = await response.json().catch(() => ({}));
+        if (!response.ok) throw new Error(result.error || "We couldn't save your subscription. Please try again.");
+        successMessage.hidden = false;
+        formStatus.textContent = result.alreadySubscribed ? "You're already subscribed — welcome back!" : "";
+        subscribeForm.reset();
+      } catch (error) {
+        formStatus.textContent = error.message || "Something went wrong. Please try again shortly.";
+      } finally {
+        subscribeButton.disabled = false;
+        subscribeButton.textContent = "Subscribe ↗";
+      }
+    });
+  </script>
+</body>
+</html>
